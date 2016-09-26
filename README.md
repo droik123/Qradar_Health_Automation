@@ -12,6 +12,12 @@ The script checks for the Active box and executes commands to find the below att
 6) User check i.e provides the lists of users that are created on the Qradar box. 
 
 Please note this was the criteria that I required for the daily Health Check.  
-Please note this is my first submissions to GITHUB.  
 
 If there are any requests that you have for further development of the script, please feel free to comment. 
+
+How to use:
+Download the file dailyhealthcheck.sh
+chmod +x dailyhealthcheck.sh
+./dailyhealthcheck.sh
+
+This will create a file called dailyhealthcheck with the date in the filename.  
