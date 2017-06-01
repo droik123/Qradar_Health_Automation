@@ -15,7 +15,7 @@ ls -lt /store/backup |head -5 >>healthcheck.out
 printf "\n*****User Check***** \n\n" >>healthcheck.out
 ls -l /store/users  >>healthcheck.out
 cp healthcheck.out "healthcheck.out.$(date +%Y%m%d)" && rm -rf healthcheck.out
-mail -s "$(hostname) Daily System Check $(date +%Y%m%d)" klsoc@paladion.net < healthcheck.out.$(date +%Y%m%d)
+mail -s "$(hostname) Daily System Check $(date +%Y%m%d)" youremail@male.cim < healthcheck.out.$(date +%Y%m%d)
 
 
 else if [[ $(/opt/qradar/ha/bin/ha_getstate.sh) = standby ]]; then
